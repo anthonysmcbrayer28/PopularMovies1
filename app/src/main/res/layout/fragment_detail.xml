@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_detail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.popularmovies.DetailActivityFragment"
+    tools:showIn="@layout/activity_detail">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:paddingLeft = "20dp"
+                android:id ="@+id/title"
+                android:background = "#3e20e4"
+                android:textSize= "35dp"
+                android:gravity = "center_vertical"
+                android:textColor="#f0f8ff"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight = "true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="15dp"
+                android:paddingRight = "15dp"
+                android:paddingTop="15dp"
+                android:paddingBottom = "15dp"
+                android:layout_below = "@+id/title"
+                android:layout_alignParentLeft="true"
+                android:id = "@+id/poster"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft = "5dp"
+                android:paddingTop = "15dp"
+                android:id ="@+id/date"
+                android:layout_below = "@+id/title"
+                android:layout_toRightOf="@+id/poster"
+                android:textSize= "25dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft = "5dp"
+                android:paddingBottom = "5dp"
+                android:id ="@+id/rating"
+                android:layout_below = "@+id/date"
+                android:layout_toRightOf="@+id/poster"
+                android:textStyle="bold"
+                />
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft = "15dp"
+                android:paddingRight = "15dp"
+                android:paddingBottom = "15dp"
+                android:id ="@+id/overview"
+                android:layout_below = "@+id/poster"
+
+                />
+            <LinearLayout
+                android:layout_width = "fill_parent"
+                android:layout_height="wrap_content"
+                android:id = "@+id/linear"
+                android:paddingLeft= "15dp"
+                android:paddingRight = "15dp"
+                android:layout_below = "@+id/overview"
+                android:orientation = "vertical">
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background = "@android:color/black"/>
+                <Button
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:text = "FAVORITE"
+                    android:layout_below = "@+id/rating"
+                    android:layout_toRightOf="@+id/poster"
+                    android:id = "@+id/favorite"
+                    android:gravity = "center"
+                    android:onClick = "favorite"/>
+
+                <Button
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text = "Watch Trailer 1"
+                    android:layout_below="@+id/favorite"
+                    android:paddingLeft = "15dp"
+                    android:id = "@+id/trailer1"
+                    android:gravity = "center_vertical"
+                    android:onClick = "trailer1"
+                    />
+                <Button
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text = "Watch Trailer 2"
+                    android:layout_below="@+id/trailer1"
+                    android:paddingLeft = "15dp"
+                    android:id = "@+id/trailer2"
+                    android:gravity = "center_vertical"
+                    android:onClick = "trailer2"
+                    />
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background = "@android:color/black"/>
+                <TextView
+                    android:text = "Reviews:"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop = "15dp"
+                    android:paddingBottom = "15dp"
+                    android:id ="@+id/reviews"/>
+
+            </LinearLayout>
+        </RelativeLayout>
+        </ScrollView>
+        </RelativeLayout>
