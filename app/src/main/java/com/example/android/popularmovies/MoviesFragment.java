@@ -127,6 +127,10 @@ public class MoviesFragment extends Fragment {
         prefs = PreferenceManager.getDefaultSharedPreferences(getActivity());
         listener = new PreferenceChangeListener();
         prefs.registerOnSharedPreferenceChangeListener(listener);
+        if(listener==null)
+        {
+            return;
+        }
 
         if(prefs.getString("sortby","popularity").equals("popularity"))
         {
