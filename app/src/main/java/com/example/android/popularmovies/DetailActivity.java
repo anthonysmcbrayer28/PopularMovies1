@@ -77,11 +77,11 @@ public class DetailActivity extends AppCompatActivity {
     }
     public void trailer1(View v)
     {
-        //launch activity with first youtube video
+
     }
     public void trailer2(View v)
     {
-        //launch activity with second youtube video
+
     }
 }
 

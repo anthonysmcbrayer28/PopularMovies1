@@ -14,7 +14,7 @@ import com.squareup.picasso.Picasso;
 import java.util.ArrayList;
 
 import static com.example.android.popularmovies.R.drawable.androidparty;
-import static com.example.android.popularmovies.R.drawable.download;
+
 
 /**
  * Created by antho_000 on 11/22/2016.
@@ -57,7 +57,7 @@ public class ImageAdapter extends BaseAdapter {
             imageView = (ImageView) convertView;
         }
 
-        Drawable d =resizeDrawable(mContext.getResources().getDrawable(R.drawable.download));
+        Drawable d =resizeDrawable(mContext.getResources().getDrawable(R.drawable.androidparty));
         Picasso.with(mContext).load("http://image.tmdb.org/t/p/w185/" + array.get(position)).
                 resize(width, (int)(width*1.5)).placeholder(d).into(imageView);
         return imageView;
