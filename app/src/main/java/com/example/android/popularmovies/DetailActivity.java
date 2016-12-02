@@ -21,11 +21,7 @@ public class DetailActivity extends AppCompatActivity {
         setContentView(R.layout.activity_detail);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-        if(savedInstanceState==null)
-        {
-            getSupportFragmentManager().beginTransaction().add(R.id.fragment2, new DetailActivityFragment()).commit();
-        }
-
+       
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
