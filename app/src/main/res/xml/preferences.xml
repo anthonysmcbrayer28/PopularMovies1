@@ -3,7 +3,7 @@
     <ListPreference
         android:title="sort movies by"
         android:key="sortby"
-        android:defaultValue="rating"
+        android:defaultValue="most popular"
         android:entries="@array/pref_entries"
         android:entryValues="@array/pref_values"
         ></ListPreference>
