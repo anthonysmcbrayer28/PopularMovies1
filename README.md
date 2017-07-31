@@ -1,3 +1,3 @@
 # PopularMovies1
 stage one of two for popularMovies app
-This app was the start for popularmoviepopularmovies It dodoesn't have the movie trailers that the second version has
+The purpose of this app was to build a ui layout for multiple Activities,and launch the Activities via intents. this app was also designed to fetch data from the MoviePB API
